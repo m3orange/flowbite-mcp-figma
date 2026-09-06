@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # design reference scratch
 .design-ref/
+
+*storybook.log
+storybook-static
