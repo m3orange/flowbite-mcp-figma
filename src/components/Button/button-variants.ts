@@ -23,13 +23,17 @@ export const buttonBase =
   "transition-[color,background-color,border-color,box-shadow] duration-150 " +
   "focus:outline-none focus:z-10 focus-visible:outline-none";
 
-/** Text-button geometry — px / py / font-size / line-height / gap per size. */
+/**
+ * Text-button geometry per size. Figma binds every size to the same padding
+ * (spacing/5 · spacing/2 = 20px · 8px) and gap (spacing/1.5 = 6px); only
+ * font size and line height scale.
+ */
 export const textSize: Record<ButtonSize, string> = {
-  xs: "gap-1.5 px-3 py-1.5 text-[length:var(--font-size-xs)] leading-[var(--line-height-5)]",
-  sm: "gap-1.5 px-3 py-2 text-[length:var(--font-size-sm)] leading-[var(--line-height-5)]",
-  base: "gap-1.5 px-4 py-2.5 text-[length:var(--font-size-sm)] leading-[var(--line-height-5)]",
-  lg: "gap-1.5 px-5 py-3 text-[length:var(--font-size-base)] leading-[var(--line-height-6)]",
-  xl: "gap-1.5 px-6 py-3.5 text-[length:var(--font-size-base)] leading-[var(--line-height-6)]",
+  xs: "gap-1.5 px-5 py-2 text-[length:var(--font-size-xs)] leading-[var(--line-height-5)]",
+  sm: "gap-1.5 px-5 py-2 text-[length:var(--font-size-sm)] leading-[var(--line-height-5)]",
+  base: "gap-1.5 px-5 py-2 text-[length:var(--font-size-sm)] leading-[var(--line-height-5)]",
+  lg: "gap-1.5 px-5 py-2 text-[length:var(--font-size-base)] leading-[var(--line-height-6)]",
+  xl: "gap-1.5 px-5 py-2 text-[length:var(--font-size-base)] leading-[var(--line-height-6)]",
 };
 
 /** Icon-only geometry — fixed square footprint per size. */
