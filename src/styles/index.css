@@ -1,0 +1,21 @@
+/* Inter — loaded from Google Fonts for the demo/showcase. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import "tailwindcss";
+@import "./tokens.css";
+
+@theme {
+  --font-sans: var(--font-base);
+
+  /* Override Tailwind's default shadow scale with the Figma effect tokens. */
+  --shadow-xs: 0 1px 0.5px rgba(29, 41, 61, 0.02);
+  --shadow-btn: 0 1px 1px rgba(29, 41, 61, 0.2);
+}
+
+html,
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  background: var(--color-bg-white);
+  color: var(--color-text-heading);
+  -webkit-font-smoothing: antialiased;
+}
