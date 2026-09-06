@@ -24,7 +24,7 @@ const EMULATED: Partial<
   Record<ButtonVariant, { hover: string; focus: string }>
 > = {
   primary: {
-    hover: "!bg-[var(--color-bg-brand-strong)]",
+    hover: "!bg-[var(--color-bg-brand-hover)]",
     focus:
       "!bg-[var(--color-bg-brand-strong)] shadow-[0_0_0_2px_var(--color-ring-brand)]",
   },

@@ -18,7 +18,7 @@ export type ButtonSize = "xs" | "sm" | "base" | "lg" | "xl";
 
 /** Shared layout for every button. */
 export const buttonBase =
-  "relative inline-flex items-center justify-center rounded-[var(--radius-base)] " +
+  "relative inline-flex items-center justify-center rounded-[var(--radius)] " +
   "font-medium whitespace-nowrap select-none outline-none " +
   "transition-[color,background-color,border-color,box-shadow] duration-150 " +
   "focus:outline-none focus:z-10 focus-visible:outline-none";
@@ -73,7 +73,7 @@ const DISABLED_FILL =
 export const solidVariants: Record<ButtonVariant, StateStyle> = {
   primary: {
     base: "border border-transparent bg-[var(--color-bg-brand)] text-[var(--color-text-white)] shadow-xs",
-    hover: "hover:bg-[var(--color-bg-brand-strong)]",
+    hover: "hover:bg-[var(--color-bg-brand-hover)]",
     focus:
       "focus:bg-[var(--color-bg-brand-strong)] focus:shadow-[0_0_0_2px_var(--color-ring-brand)]",
     disabled: DISABLED_FILL,
